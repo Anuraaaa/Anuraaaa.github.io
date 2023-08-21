@@ -2,126 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Berita</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.49.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        .main {
+            background-color: #FEFEFE;
+            padding: 2rem 8rem 2rem 8rem;
+        }
+        img {
+            border-radius: 16px;
+            width: 500px;
+        }
+        section {
+            margin: 2rem 0px 2rem 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+        }
+        section div {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        fieldset {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-around;
+            border: none;
+        }
+        marquee {
+            width: 15%;
+        }
+        hr {
+            width: 15%;
+            height: 5px;
+            color: #003C6C;
+            background-color: #003C6C;
+        }
+        hr, h1 {
+            color: #003C6C;
+        }
+        ul h1 {
+            margin-bottom: 1rem;
+        }
+        footer {
+            text-align: justify;
+        }
+        .content-text {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    </style>
 </head>
 <body>
-
-  <div class="bg-slate-500 pb-96">
-    
-    <div class="navbar bg-blue-500 text-sky-50">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-            </label>
-            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Homepage</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>About</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="navbar-center">
-          <a class="btn btn-ghost normal-case text-xl">News One</a>
-        </div>
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-          </button>
-          <button class="btn btn-ghost btn-circle">
-            <div class="indicator">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
-              <span class="badge badge-xs badge-primary indicator-item"></span>
+    <div class="main">
+        <header>
+            <marquee direction="right" scrolldelay="200">
+                <h1>About</h1>
+            </marquee>
+            <hr>
+            <p>Sebuah website tentang Muhammad Anwar Fauzan untuk melengkapi Tugas Web-Design (HTML, CSS, BOOTSTRAP)</p>
+        </header>
+        <section>
+            <div>
+                <img src="https://i.ibb.co/syLX2C4/Muhammad-Anwar-Fauzan-Teknik-Informatika-4.jpg" alt="">
             </div>
-          </button>
-        </div>
-      </div> 
-  
-  
-
-        <div class="flex flex-row flex-wrap justify-center items-center items-stretch gap-4">
-
-          <div class="card w-96 bg-base-100 shadow-xl mt-24">
-          <figure><img src="cart.png" alt="" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">
-              Unbaja heboh!!!!
-              <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>Unbaja heboh diminati calon mahasiswa karena biaya uktnya uang GRATIS!!!</p>
-            <div class="card-actions justify-end">
-              <div class="badge badge-outline">Schools</div>
+            <div class="content-text">
+                <legend>
+                    <h1>Web Developer</h1>
+                    <p>Saya Muhammad Anwar Fauzan, Mahasiswa Teknik Informatika Universitas Banten Jaya semester 5, saya menguasai HTML, CSS, JavaScript, PHP, SQL, Laravel, ReactJS. Saya tertarik dan berminat dengan adanya Studi Independen ini untuk belajar lebih dalam lagi tentang Dunia Teknologi Informasi.
+                    </p>
+                </legend>
+                <fieldset>
+                    <ul>
+                        <h1>Tentang Saya</h1>
+                        <li>Nama: Muhammad Anwar Fauzan</li>
+                        <li>Umur: 20 Tahun</li>
+                        <li>Asal: Serang, Banten</li>
+                        <li>Phone: +625939410330</li>
+                        <li>Email: anwar.fauzan98@gmail.com</li>
+                    </ul>
+                    <ul>
+                        <h1>Skills</h1>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>Laravel</li>
+                        <li>ReactJS</li>
+                    </ul>
+                </fieldset>
+                <footer>
+                    <p>
+                        Terima kasih telah mengunjungi website ini. Saya percaya bahwa kreativitas adalah kunci untuk menciptakan solusi yang luar biasa. Saya berkomitmen untuk terus mengeksplorasi dan menghadirkan ide-ide inovatif dalam setiap tugas yang saya ambil.
+                        Saya selalu terbuka untuk kolaborasi dan kesempatan baru.
+                    </p>
+                </footer>
             </div>
-          </div>
-        </div>      
-
-        <div class="card w-96 bg-base-100 shadow-xl mt-24">
-          <figure><img src="cart2.png" alt="" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">
-              Mahasiswa Berprestasi!!!
-              <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>Mahasiswa ini berhasil meraih piala presiden karena mengikuti lomba estafet</p>
-            <div class="card-actions justify-end">
-              <div class="badge badge-outline">Schools</div>
-            </div>
-          </div>
-        </div>      
-
-
-        <div class="card w-96 bg-base-100 shadow-xl mt-24">
-          <figure><img src="bag.png" alt="" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">
-              Tokoapedi vs BeliBeli ??!!!!
-              <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>Panas!!! Tokopaedi menggugat BeliBeli dikarenakan produknya sama!!!!</p>
-            <div class="card-actions justify-end">
-              <div class="badge badge-outline">Online Shop</div>
-            </div>
-          </div>
-        </div>      
-
-        <div class="card w-96 bg-base-100 shadow-xl mt-24">
-          <figure><img src="mobil4.png" alt="" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">
-              Mercedes Benz V10223
-              <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>Mobil ini mampu menyaingi formula F1 dengan kecepatan 120 km/h</p>
-            <div class="card-actions justify-end">
-              <div class="badge badge-outline">Sports</div>
-            </div>
-          </div>
-        </div>      
-
-        <div class="card w-96 bg-base-100 shadow-xl mt-24">
-          <figure><img src="mobil5.png" alt="" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">
-              Toyota Supra KZMSHDS
-              <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>CANGGIH!!! Mobil ini dapat berkendara di udara dan di laut</p>
-            <div class="card-actions justify-end">
-              <div class="badge badge-outline">Sports</div>
-            </div>
-          </div>
-        </div>      
-
-      </div>
-
-        
-  </div>
-  
-  
-  
+        </section>
+    </div>
 </body>
 </html>
